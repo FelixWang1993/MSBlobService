@@ -1,0 +1,12 @@
+---
+applications:
+  - name: my-store-aws
+    memory: 512M
+    instances: 1
+    buildpack: java_buildpack
+    path: target/blobstore-aws-sample-1.0.0-SNAPSHOT.jar
+    timeout: 180
+    env:
+      BROKER_SERVICE_NAME: myblob
+    services:
+     - myblob
