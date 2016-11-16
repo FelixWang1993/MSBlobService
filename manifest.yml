@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: my-store-aws
+  - name: blobstore-predix-seed
     memory: 512M
     instances: 1
     buildpack: java_buildpack

@@ -1,0 +1,17 @@
+[
+	"TypeScript",
+	"The workspace folder contains TypeScript version {0}. Do you want to use this version instead of the bundled version {1}?",
+	"Use {0}",
+	"Use {0}",
+	"More Information",
+	"Don't Check Again",
+	"Continuing with version {0}",
+	"Der Pfad \"{0}\" verweist nicht auf eine gültige Tsserver-Installation. TypeScript-Sprachfeatures werden deaktiviert.",
+	"benutzerdefiniert",
+	"A version mismatch between the globally installed tsc compiler ({0}) and VS Code's language service ({1}) has been detected. This might result in inconsistent compile errors.",
+	"More Information",
+	"Don't Check Again",
+	"Der TypeScript-Sprachserver konnte nicht gestartet werden. Fehlermeldung: {0}",
+	"Der TypeScript-Sprachdienst wurde während der letzten 5 Minuten 5 Mal unerwartet beendet. Öffnen Sie ggf. einen Fehlerbericht.",
+	"Der TypeScript-Sprachdienst wurde 5 Mal direkt nach seinem Start beendet. Der Dienst wird nicht neu gestartet. Bitte öffnen Sie einen Fehlerbericht."
+]

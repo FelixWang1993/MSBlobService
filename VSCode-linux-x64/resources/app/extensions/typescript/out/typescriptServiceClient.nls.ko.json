@@ -1,0 +1,17 @@
+[
+	"TypeScript",
+	"The workspace folder contains TypeScript version {0}. Do you want to use this version instead of the bundled version {1}?",
+	"Use {0}",
+	"Use {0}",
+	"More Information",
+	"Don't Check Again",
+	"Continuing with version {0}",
+	"경로 {0}이(가) 올바른 tsserver 설치를 가리키지 않습니다. TypeScript 언어 기능이 사용되지 않도록 설정됩니다.",
+	"사용자 지정",
+	"A version mismatch between the globally installed tsc compiler ({0}) and VS Code's language service ({1}) has been detected. This might result in inconsistent compile errors.",
+	"More Information",
+	"Don't Check Again",
+	"TypeScript 언어 서버를 시작할 수 없습니다. 오류 메시지: {0}",
+	"TypeScript 언어 서비스가 지난 5분 동안 예기치 않게 5번 종료되었습니다. 버그 보고서를 열어 보세요.",
+	"TypeScript 언어 서비스가 시작된 직후 5번 종료되었습니다. 서비스가 다시 시작되지 않습니다. 버그 보고서를 열어 보세요."
+]

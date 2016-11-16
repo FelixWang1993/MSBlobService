@@ -36,7 +36,7 @@ public class BlobstoreController {
     @Autowired
     BlobstoreService objectStoreService;
 
-    /**
+     /**
      * Delete a Blob File from the database and Object Store
      *
      * @param id name of the Blob to be deleted
@@ -57,6 +57,10 @@ public class BlobstoreController {
 
         return new ResponseEntity<InputStreamResource>(HttpStatus.NO_CONTENT);
     }
+
+
+
+    
 
     /**
      * Get a Blob File from the Object Store
@@ -140,5 +144,22 @@ public class BlobstoreController {
          }
     	 String jsonStr=JSONArray.fromObject(images).toString();
     	 return jsonStr;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/blob/{searchText}", method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
+    public String getFileList(@PathVariable(value = "searchText") String searchText){
+        List<S3Object> images;
+         try {
+             // Get the data from database
+             log.info("search buckets"+searchText);
+             images = (List<S3Object>) objectStoreService.get(searchText,"");
+         } catch (Exception e) {
+             log.error(e.getMessage());
+             log.error(e);
+             images= new ArrayList<S3Object>();
+         }
+         String jsonStr=JSONArray.fromObject(images).toString();
+         return jsonStr;
     }
 }
